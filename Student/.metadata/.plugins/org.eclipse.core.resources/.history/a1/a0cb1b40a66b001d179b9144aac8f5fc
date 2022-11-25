@@ -1,0 +1,72 @@
+package Student;
+
+import java.util.Scanner;
+
+public class StudentService {
+	
+	public static void acceptStudentData(Student[] stud)
+	{
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i<stud.length;i++)
+		{
+			System.out.println("enter ID");
+			int id=sc.nextInt();
+			sc.nextLine();
+			System.out.println("Enter name");
+			String name=sc.nextLine();
+			System.out.println("enter M1");
+			int m1=sc.nextInt();
+			System.out.println("enter M2");
+			int m2=sc.nextInt();
+			System.out.println("enter M3");
+			int m3=sc.nextInt();
+			stud[i]=new Student(id,name,m1,m2,m3);
+			
+		}
+	}
+	
+	public static void display(Student[]stud) {
+		for(int i=0;i<stud.length;i++) {
+			System.out.println(stud[i]);
+		}
+	}
+	
+	public static Student search(Student[]stud,int id) {
+		System.out.println("*****************SEARCH***********************");
+		System.out.println("Result for Searched ID is:");
+		for(int i=0;i<stud.length;i++) {
+			if(stud[i].getId()==id) {
+				return stud[i];
+			}
+		}
+		return null;
+	}
+	
+	public static double calPercentage() {
+			double percent=calculation(1,90,98,99);
+		if(percent>80) {
+				System.out.println("A");
+			}
+			else if(percent<80 && percent >70){
+				System.out.println("B");
+			}
+			else if(percent <70 && percent >60) {			
+				System.out.println("C");
+			}
+			else {
+				System.out.println("D");
+			}
+		return percent;
+		
+	}	
+	private static double calculation(int id,int m1,int m2,int m3) {
+		int total=(m1+m2+m3);
+		double percent=(total/3);
+		return percent;
+		
+		
+	}
+	
+	
+
+}

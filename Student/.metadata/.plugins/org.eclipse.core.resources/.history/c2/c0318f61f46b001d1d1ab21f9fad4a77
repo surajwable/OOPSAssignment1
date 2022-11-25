@@ -1,0 +1,18 @@
+
+public class GenericFunctions<T,U> {
+	
+	public void add(T i,T j) {
+		System.out.println(i+","+j);
+	}
+	
+	public void test(T i,U j) {
+		System.out.println(i+","j);
+	}
+	
+	public static void main(String[] args) {
+		GenericFunctions<Integer>ob=new GenericFunctions;
+		ob.add("xyz","Hello");
+
+	}
+
+}

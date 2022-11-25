@@ -1,0 +1,18 @@
+package com.demo.beans;
+
+public class Employee {
+	
+	private String dept;
+	private String desg;
+
+	public Employee() {
+		this.dept=null;
+		this.desg=null;
+	}
+	
+	public Employee(String dept,String desg) {
+		this.dept=dept;
+		this.desg=desg;
+		
+	}
+}

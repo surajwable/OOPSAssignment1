@@ -1,0 +1,36 @@
+package com.demo.beans;
+
+public class PhdStudent extends Student {
+	
+	private int spmarks;
+	
+	public PhdStudent() {
+		this.spmarks=0;
+	}
+	
+	public PhdStudent(int id,String nm,String adr,int m1,int m2,int m3,int spmarks) {
+		super(id,nm,adr,m1,m2,m3);
+		this.spmarks=spmarks;
+	}
+	
+	public double calculatePer() {
+		return (getM1()+getM2()+getM3()+spmarks)/4;
+	}
+
+	public int getSpmarks() {
+		return spmarks;
+	}
+
+	public void setSpmarks(int spmarks) {
+		this.spmarks = spmarks;
+	}
+
+	public String toString() {
+		return super.toString() +"spmarks=" + spmarks;
+	}
+	
+	
+	
+	
+
+}

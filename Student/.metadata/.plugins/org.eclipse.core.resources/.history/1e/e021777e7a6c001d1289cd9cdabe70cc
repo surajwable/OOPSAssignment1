@@ -1,0 +1,12 @@
+package com.demo.beans;
+
+public class MscStudent extends Student {
+	
+	private int m1,m2,m3;
+
+	public MscStudent() {
+		this.m1=0;
+		this.m2=0;
+		this.m3=0;
+	}
+}

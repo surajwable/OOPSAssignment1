@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class MenuStudent {
+	int choice;
+	public static void display(Student[]stud) {
+		Scanner sc =new Scanner(System.in);
+		do
+		{
+			System.out.println("**********************MENU**********************");
+			System.out.println("1.ADD NEW STUDENT\n2.FIND PERCENTAGE AND GPA OF A STUDENT\n3.DISPLAY A STUDENT BY ID\n4.DISPLAY ALL STUDENTS");
+			int choice=sc.nextInt();
+			switch(choice)
+			{
+			case 1:
+				StudentServices.acceptStudentData(stud);
+			break;
+			
+			case 2:
+				System.out.println("Enter ID to Find Percentage and GPA");
+				int id1=sc.nextInt();
+				double per=StudentServices.calPercentage(stud, id1);
+				
+			}
+		}
+
+
+	}
+
+
+}

@@ -1,0 +1,17 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+public class Menu {
+	static int choice;
+	static Scanner sc=new Scanner(System.in);
+	public static void menudriven() {
+		
+		do {
+			System.out.println("enter the choice");
+			System.out.println("1.MscStudent\n 2.PhdStudent");
+			choice=sc.nextInt();
+			
+		}
+	}
+}

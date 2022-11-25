@@ -1,0 +1,14 @@
+package com.demo.test;
+
+import com.demo.beans.MscStudent;
+
+public class TestStudent {
+
+	public static void main(String[] args) {
+		MscStudent m1=new MscStudent(1,"suraj","pune",90,98,92);
+		MscStudent m2=new MscStudent(1,"suraj","pune",90,98,92);
+		MscStudent m3=new MscStudent(1,"suraj","pune",90,98,92);
+
+	}
+
+}

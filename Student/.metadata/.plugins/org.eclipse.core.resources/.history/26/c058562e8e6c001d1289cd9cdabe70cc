@@ -1,0 +1,44 @@
+package com.demo.test;
+
+import java.util.Scanner;
+import com.demo.beans.*;
+
+public class TestEmployee {
+	static Scanner sc=new Scanner(System.in);
+
+	public static void main(String[] args) {
+		int choice;
+
+		do
+		{
+			System.out.println("********************MENU************************");
+			System.out.println("enter choice");
+			System.out.println("1.Salaried Employee\n 2.Contract Employee 3.Customer Details");
+			choice=sc.nextInt();
+			switch(choice)
+			{
+			case 1:
+				SalariedEmp s=new SalariedEmp(1,"suraj","suraj.wable13@gmail.com","Research","HOD",95000,9500);
+				System.out.println(s);
+				System.out.println("Salaried Employee total Salary :"+s.calculateSal());
+				break;
+
+			case 2:
+				ContractEmp c=new ContractEmp(2,"Pritam","patilpritam1974@gmail.com","Development","TeamLeader",100,700);
+				System.out.println(c);
+				System.out.println("Contract Employee total Salary :"+c.calculateSal());
+				break;
+
+			case 3:
+				Customer cs=new Customer(1,"revati","revati@gamil.com","Premium","janawadi,galliNo9211");
+				System.out.println("customer Details: "+cs);
+				break;
+
+			case 4:
+			default: System.out.println("Wrong Choice");
+			break;
+			}
+		}
+		while(choice!=4);
+	}
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class MenuStudent {
+	int choice;
+	public static void display(Student[]stud) {
+		Scanner sc =new Scanner(System.in);
+		do
+		{
+			System.out.println("**********************MENU**********************");
+			System.out.println("1.ADD NEW STUDENT\n2.FIND PERCENTAGE AND GPA OF A STUDENT\n3.DISPLAY A STUDENT BY ID\n4.DISPLAY ALL STUDENTS");
+			int choice=sc.nextInt();
+			switch(choice)
+			{
+			case 1:Student.acceptStudentData()
+			}
+		}
+		
+		
+	}
+	
+	
+}

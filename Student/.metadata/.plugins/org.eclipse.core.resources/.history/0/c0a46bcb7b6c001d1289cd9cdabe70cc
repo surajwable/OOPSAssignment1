@@ -1,0 +1,18 @@
+package com.demo.beans;
+
+public class PhdStudent extends MscStudent {
+	
+	private int spmarks;
+	
+	public PhdStudent() {
+		this.spmarks=0;
+	}
+	
+	public PhdStudent(int id,String nm,String adr,int m1,int m2,int m3,int spmarks) {
+		super(id,nm,adr,m1,m2,m3);
+		this.spmarks=spmarks;
+	}
+	
+	
+
+}
