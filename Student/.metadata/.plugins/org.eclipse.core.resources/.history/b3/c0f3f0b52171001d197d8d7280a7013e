@@ -1,0 +1,18 @@
+package com.demo.service;
+import java.util.List;
+
+import com.demo.beans.Product;
+
+public interface ProductService {
+	void addnewproduct();
+	Product searchproduct(int id);
+	Product searchbyname(String name);
+	Product remove(int id);
+	Product search(int id);
+	List<Product> displayall();
+	Product displayallwithqty();
+	Product modifyprice(int id);
+	Product sortbyprice();
+	Product searchById(int id);
+
+}

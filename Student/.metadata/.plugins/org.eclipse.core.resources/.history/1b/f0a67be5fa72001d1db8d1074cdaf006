@@ -1,0 +1,9 @@
+package com.demo.service;
+
+public interface AccountService {
+
+	void displayAccount();
+
+	void addAccount();
+
+}

@@ -1,0 +1,69 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+import com.demo.service.AccountService;
+
+public class TestAccountArrayMenu {
+
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int choice=0;
+	
+	do {
+		System.out.println("*********************MENU***********************");
+		System.out.println("1.Withdraw Amount\n2.Add Amount\n3.Check Balance\n4.Change Pin Number\n5.Open New Account\n6.Exit");
+		System.out.println("Enter yout choice\n");
+		choice=sc.nextInt();
+		
+		switch(choice) {
+		case 1:
+			System.out.println("Enter Account number");
+			int accno=sc.nextInt();
+			System.out.println("enter pin number");
+			int pin=sc.nextInt();
+			System.out.println("enter Amount");
+			float amount=sc.nextFloat();
+			AccountService.withdrawAmt(accno, pin, amount);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+		case 3:
+			
+			
+			
+		}
+	}
+	
+	}
+
+}

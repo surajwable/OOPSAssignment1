@@ -1,0 +1,10 @@
+package com.demo.service;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	static List<Employee>elist;
+	static {
+		plist=new ArrayList<>();
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.demo.service;
+
+import com.demo.beans.Product;
+
+public interface ProductService {
+	void addnewproduct();
+	Product searchproduct(int id);
+	Product searchproduct(String name);
+	Product remove(int id);
+	Product search(int id);
+	list<Product> displayall();
+	Product displayallwithqty(plist);
+	Product modifyprice(int id);
+	Product sortbyprice(plist);
+
+}

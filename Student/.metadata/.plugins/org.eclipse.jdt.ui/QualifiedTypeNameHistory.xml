@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.demo.beans.SalariedEmp"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Student"/>
+    <fullyQualifiedTypeName name="com.demo.beans.PhdStudent"/>
+    <fullyQualifiedTypeName name="com.demo.beans.MscStudent"/>
+    <fullyQualifiedTypeName name="com.demo.service.StudentServices"/>
+    <fullyQualifiedTypeName name="com.demo.beans.SavingsAccount"/>
+    <fullyQualifiedTypeName name="com.demo.beans.DematAccount"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Question"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Exam"/>
+    <fullyQualifiedTypeName name="com.demo.service.ExamService"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Date"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Interface1"/>
+    <fullyQualifiedTypeName name="com.demo.beans.interface2"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Coach"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Team"/>
+    <fullyQualifiedTypeName name="com.demo.service.TeamService"/>
+    <fullyQualifiedTypeName name="com.demo.service.TeamServiceImpl"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Player"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Product"/>
+    <fullyQualifiedTypeName name="com.demo.dao.EmployeeDAOImpl"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.text.ParseException"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Employee"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="com.demo.service.AccountService"/>
+    <fullyQualifiedTypeName name="com.demo.service.AccountServiceImpl"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.demo.beans.Account"/>
+    <fullyQualifiedTypeName name="com.demo.dao.AccountDAO"/>
+    <fullyQualifiedTypeName name="com.demo.dao.AccountDAOImpl"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,42 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+import com.demo.service.AccountService;
+import com.demo.service.AccountServiceImpl;
+
+public class AccountManagement {
+
+	public static void main(String[] args) {
+		AccountService aservice=new AccountServiceImpl();
+		Scanner sc=new Scanner(System.in);
+		int choice;
+		do
+		{
+			System.out.println("**************MENU****************");
+			System.out.println("1.Display Account\n2.Add Account");
+			System.out.println("Enter the choice");
+			choice=sc.nextInt();
+			
+			switch(choice) {
+			
+			case 1://Display all Accounts
+				aservice.addAccount();
+				break;
+				
+			case 2://Add new Account
+				break;
+				
+			case 3:System.out.println("Thank you for Visiting....!!!");
+			break;
+			}
+			
+			
+			
+			
+			
+		}while(choice!=3);
+
+}
+	
+}

@@ -1,0 +1,33 @@
+package com.demo.test;
+
+import com.demo.beans.Coach;
+import com.demo.beans.Player;
+import com.demo.beans.Team;
+
+public class TestAssociation {
+public static void main(String[] args) {
+	Player[] parr=new Player[12];
+	Player p=new Player(10,"virat","Allrounder");
+	parr[0]=new Player(10,"virat","Allrounder");
+	parr[1]=new Player(11,"Jaddu","Allrounder");
+	parr[3]=new Player(12,"Sachin","Batsman");
+	parr[4]=new Player(13,"sky","Batsman");
+	parr[5]=new Player(14,"jasprit","Bowler");
+	parr[6]=new Player(10,"balaji","Bowler");
+	parr[7]=new Player(10,"irfan","Bowler");
+	parr[8]=new Player(10,"yuvraj","Batsman");
+	parr[9]=new Player(10,"sehwag","Batsman");
+	parr[10]=new Player(10,"dhawan","Batsman");
+	parr[11]=new Player(10,"pandya","Allrounder");
+	
+	Team t1=new Team(11,"MumbaiIndians",captain,p,parr);
+	
+	System.out.println(t1);
+	System.out.println("coach name"+t1.getC().getCname());
+	System.out.println("player name"+t1.getP().getSpeciality());
+	for(Player p1: t1.getPlist())
+	{
+		System.out.println(p1);
+	}
+}
+}

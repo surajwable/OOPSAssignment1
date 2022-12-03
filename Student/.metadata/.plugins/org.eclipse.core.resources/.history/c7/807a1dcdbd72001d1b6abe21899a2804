@@ -1,0 +1,34 @@
+package com.demo.service;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.demo.beans.Account;
+
+public class AccountServiceImpl implements AccountService{
+	Scanner sc=new Scanner(System.in);
+	List<Account>lt;
+	@Override
+	public void addAccount() {
+		System.out.println("enter id");
+		int id=sc.nextInt();
+		sc.nextLine();
+		System.out.println("enter name");
+		String name=sc.nextLine();
+		System.out.println("enter balance");
+		double balance=sc.nextDouble();
+		List <Account>lt new Account(id,name,balance);
+		System.out.println(lt);
+		
+	}
+	@Override
+	public void displayAccount() {
+		for(Account a:lt) {
+			System.out.println(lt);
+		}
+		
+	}
+	
+	
+
+}

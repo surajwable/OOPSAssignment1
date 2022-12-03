@@ -1,0 +1,84 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+import com.demo.service.EmployeeService;
+import com.demo.service.EmployeeServiceImpl;
+
+public class TestEmployeeMgmt {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		EmployeeService eservice=new EmployeeServiceImpl();
+		int choice;
+		do {
+			System.out.println("1.Add new Employee\n2.Remove By Id\n 3.Remove By Name\n");
+			System.out.println("4.Find By ID\n5.Find By Name\n6.Display All Employees\n");
+			System.out.println("7.display all with salary > given salary\n8.modify salary\n9.Modify Salary 10.exit\n ");
+			System.out.println("choice :");
+			choice = sc.nextInt();
+			
+			switch(choice) {
+			
+			case 1://add new Employee
+				eservice.addEmployee();
+				break;
+				
+			case 2://remove by id
+				System.out.println("enter id");
+				int id=sc.nextInt();
+				eservice.removebyid(id);
+				boolean status=eservice.removebyid(id);
+				if(status) {
+					System.out.println("removed successfully by id");
+				}
+				else {
+					System.out.println("Not found");
+				}
+				break;
+				
+			case 3://remove by name
+				System.out.println("enter name to delete");
+				String name=sc.next();
+				status=eservice.removebyname(name);
+				if(status) {
+					System.out.println("removed successfully by name");
+				}
+				else {
+					System.out.println("Not Found");
+				}
+				break;
+				
+			case 4://find by Id
+				System.out.println("enter id");
+				id=sc.nextInt();
+				eservice.findbyid(id);
+				break;
+				
+			case 5://find by name
+				
+				break;
+				
+			case 6://display all
+				
+				break;
+				
+			case 7://display all with salary >given salary
+				
+				break;
+				
+			
+			case 8://modify salary
+				
+				break;
+		
+			}
+			
+			
+			
+		}
+		while(choice!=10);
+		
+	}
+
+}

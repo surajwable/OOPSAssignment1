@@ -1,0 +1,15 @@
+package com.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.demo.beans.Employee;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	static List<Employee>elist;
+	static {
+		elist=new ArrayList<>();
+		
+	}
+}

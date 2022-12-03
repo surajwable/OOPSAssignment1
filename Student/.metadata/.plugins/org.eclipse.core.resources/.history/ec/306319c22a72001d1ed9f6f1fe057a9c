@@ -1,0 +1,13 @@
+package com.demo.dao;
+
+import com.demo.beans.Employee;
+
+public interface EmployeeDAO {
+
+	void save(Employee e);
+
+	Employee searchbyid(int id);
+
+	
+
+}

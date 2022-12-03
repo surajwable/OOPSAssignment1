@@ -1,0 +1,14 @@
+package com.demo.beans;
+
+public class Product {
+ 
+	private int id;
+	private String name;
+	private int qty;
+	private float price;
+	
+	public Product() {
+		super();
+	}
+	
+}

@@ -1,0 +1,75 @@
+package com.demo.service;
+
+import com.demo.beans.Coach;
+import com.demo.beans.Player;
+import com.demo.beans.Team;
+
+public class TeamServiceImpl implements TeamService{
+
+	static Team[]tlist;
+	static int count;
+	static {
+		count=0;
+		tlist=new Team[10];
+		tlist[0]=new Team();
+		tlist[0].setTeamid(1);
+		tlist[0].setTname("CSK");
+		tlist[0].setC(new Coach(1,"dravid",25));
+		tlist[0].setP(new Player(100,"dhoni","allrounder"));
+		Player[] plist= {new Player(110,"Rohit","batsman"),
+				new Player(111,"Ishan","allrounder"),
+				new Player(112,"Sam","bowler"),
+				new Player(113,"jadeja","bowler"),new Player(114,"Raina","allrounder"),
+				};
+		tlist[0].setPlist(plist);
+		tlist[1]=new Team();
+		tlist[1].setTname("Mumbai Indians");
+		tlist[1].setC(new Coach(22,"Sachin",25));
+		tlist[1].setP(new Player(200,"Virat","allrounder"));
+		Player[] plist1= {new Player(121,"Yuvraj","allrounder"),
+				new Player(122,"Harbhajan","bowler"),
+				new Player(123,"Ashwin","bowler"),
+				new Player(124,"Suryakumar","bowler"),new Player(125,"dinesh","batsman"),
+				};
+		tlist[1].setPlist(plist);
+		count=2;
+		
+	}
+	@Override
+	public void createNewTeam() {
+		// TODO Auto-generated meth
+		
+	}
+
+	@Override
+	public Team[] displayallteams() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Player[] findSpecialityAllTeams(String spe) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Player[] getBySpeciality(String tname, String spe) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Team getByCaptain(String pname) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Team getByCoach(String coach) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

@@ -1,0 +1,28 @@
+package com.demo.dao;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import com.demo.beans.Account;
+
+public class AccountDAOImpl implements AccountDAO{
+	static Set<Account>hset;
+	
+	static {
+		hset=new HashSet<>();
+		hset.add(new Account(1,"xxxx",1234));
+		hset.add(new Account(2,"yyyy",1111));
+		hset.add(new Account(3,"zzzz",3333));
+		hset.add(new Account(4,"pppp",1234));
+		hset.add(new Account(5,"xxxx",12123));
+	}
+	@Override
+	public List<Account> getTopNAcc(int n) {
+	List<Account>lst=new ArraList<>();
+	List<Account>lst1=new ArrayList<>();
+		return null;
+	}
+	
+
+}

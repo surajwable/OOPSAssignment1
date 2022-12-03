@@ -1,0 +1,21 @@
+package com.demo.service;
+
+public class AccountServiceImpl implements AccountService{
+	
+	
+
+	@Override
+	public void displayAccount() {
+		System.out.println("enter id");
+		int id=sc.nextInt();
+		System.out.println("enter name");
+		String name=sc.nextLine();
+		System.out.println("enter balance");
+		double balance=sc.nextDouble();
+		Account lst=new Account(id,name,balance);
+		
+	}
+	
+	
+
+}

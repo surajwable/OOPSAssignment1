@@ -1,0 +1,19 @@
+package com.demo.beans;
+
+public class Product {
+
+	private int proid;
+	private String proname;
+	private String expdate;
+	
+	public Product() {
+		super();
+	}
+	
+	public Product(int proid,String proname,String expdate) {
+		this.proid=proid;
+		this.proname=proname;
+		this.expdate=expdate;
+	}
+	
+}

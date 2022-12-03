@@ -1,0 +1,17 @@
+package com.demo.service;
+
+import java.util.Comparator;
+
+import com.demo.beans.Product;
+
+public class MyNameComparator implements Comparator <Product> {
+
+	@Override
+	public int compare(Product o1, Product o2) {
+	System.out.println("int method compare for name");
+	System.out.println(o1.getName()+"----------------"+o2.getName());
+		return 0;
+	}
+
+	
+}

@@ -1,0 +1,9 @@
+package com.demo.service;
+
+import java.util.Comparator;
+
+import com.demo.beans.Product;
+
+public class MyNameComparator implements Comparator <Product> {
+
+}

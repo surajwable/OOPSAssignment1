@@ -1,0 +1,33 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+public class AccountManagement {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int choice;
+		do
+		{
+			System.out.println("**************MENU****************");
+			System.out.println("1.Display Account\n2.Add Account");
+			System.out.println("Enter the choice");
+			choice=sc.nextInt();
+			
+			switch(choice) {
+			
+			case 1://Display Accounts
+				break;
+				
+			case 2://Add new Account
+			}
+			
+			
+			
+			
+			
+		}while(choice!=3);
+
+}
+	
+}

@@ -1,0 +1,13 @@
+package com.demo.service;
+
+public interface EmployeeService {
+
+	void addEmployee();
+
+	boolean removebyid(int id);
+	
+	boolean removebyname(String name);
+
+	void findbyid(int id);
+	
+}

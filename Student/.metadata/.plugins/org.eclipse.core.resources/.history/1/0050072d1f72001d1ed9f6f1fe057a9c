@@ -1,0 +1,13 @@
+package com.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.demo.beans.Employee;
+import com.demo.dao.EmployeeDAO;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	private EmployeeDAO edao;
+	
+}

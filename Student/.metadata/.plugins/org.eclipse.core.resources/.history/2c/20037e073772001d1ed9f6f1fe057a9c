@@ -1,0 +1,70 @@
+package com.demo.service;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+import com.demo.beans.Employee;
+import com.demo.dao.EmployeeDAO;
+import com.demo.dao.EmployeeDAOImpl;
+
+public class EmployeeServiceImpl implements EmployeeService{
+	Scanner scan = new Scanner(System.in);
+	private EmployeeDAO edao;//declaring dao object
+	
+	public EmployeeServiceImpl() {
+		edao = new EmployeeDAOImpl();  //reference of edao is converted into object
+	}
+	
+	public void addEmployee() {
+		//making an object sdf for date function
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		//taking date input for id,name,salary,joining date
+		System.out.println("enter id");
+		int id=scan.nextInt();
+		System.out.println("enter name");
+		String name=scan.next();
+		System.out.println("enter salary");
+		double salary=scan.nextDouble();
+		System.out.println("enter date: in format(dd/mm/yyyy)");
+		String dt=scan.next();
+		Date doj=null;
+		
+		try {
+			doj=sdf.parse(dt);
+			Employee e=new Employee(id,name,salary,doj);
+			edao.save(e);//calling save method in dao class
+		}
+		catch (ParseException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public boolean removebyid(int id) {
+		return edao.deletebyid(id);
+	}
+
+	@Override
+	public boolean removebyname(String name) {
+		return edao.deletebyname(name);
+	}
+
+	@Override
+	public Employee findbyid(int id) {
+		return edao.searchbyid(id);
+	}
+
+	@Override
+	public List<Employee> findbyname(String name1) {
+		return edao.searchbyname(name1);
+	}
+
+	@Override
+	public Set<Employee> displayAll() {
+		return edao.findAll();
+		
+	}
+	
+	
+}

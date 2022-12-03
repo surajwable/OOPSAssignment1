@@ -1,0 +1,26 @@
+package com.demo.dao;
+
+import com.demo.beans.Employee;
+
+public class EmployeeDAOImpl implements EmployeeDAO{
+	
+	static set<Employee> hset;
+	static {
+		hset=new Hashset<>();
+	}
+
+	@Override
+	public void save(Employee e) {
+		
+		
+	}
+
+	@Override
+	public Employee searchbyid(int id) {
+		
+		return null;
+	}
+	
+	
+
+}

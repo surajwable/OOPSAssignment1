@@ -1,0 +1,65 @@
+package com.demo.test;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+import com.demo.beans.Product;
+import com.demo.service.ProductService;
+import com.demo.service.ProductServiceImpl;
+
+public class TestProductManagement {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		//making an object having reference variable of Interface and object of Scanner
+		ProductService pservice=new ProductServiceImpl();
+		int choice;
+		do {
+			System.out.println("1. add new product\n2. remove by id\n 3. remove by name\n");
+			System.out.println("4. display all\n5.find by id\n 6. sort by price\n");
+			System.out.println("7. display all with qty > given qty\n8.modify price\n9.find by name 10.exit\n ");
+			System.out.println("choice :");
+			choice=sc.nextInt();
+			switch(choice) {
+			case 1://add new Product
+				pservice.addnewproduct();
+				break;
+				
+			case 3://remove by name
+				System.out.println("enter name to remove");
+				String name=sc.next();
+				status=pservice.removebyname(String name);
+				
+			case 4://display all
+				List<Product>plist=pservice.displayall();
+				Iterator<Product>it=plist.iterator();
+				while(it.hasNext()) {
+					System.out.println(it.next());
+				}
+				break;
+				
+			case 5://find by id
+				System.out.println("enter id");
+				int id=sc.nextInt();
+				Product p=pservice.findById(id);
+				if(p!=null) {
+					System.out.println(p);
+				}
+				else {
+					System.out.println("Not Found");
+				}
+				break;
+				
+			case 9://find by name
+				System.out.println("enter name");
+				String name=sc.next();
+//				=pservice.findbyname(name);
+				
+			case 10:
+				System.out.println("thank you for visiting");
+				sc.close();
+				break;
+			}
+	}while(choice!=9);
+	}
+}

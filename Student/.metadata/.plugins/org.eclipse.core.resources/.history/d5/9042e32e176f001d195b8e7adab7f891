@@ -1,0 +1,12 @@
+package com.demo.beans;
+
+public interface interface2 {
+	
+	void a21();
+	default public void m12()
+	{
+		System.out.println(" thunder");
+	}
+	
+
+}

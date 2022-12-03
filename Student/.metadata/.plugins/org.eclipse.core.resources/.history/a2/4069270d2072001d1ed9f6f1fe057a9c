@@ -1,0 +1,30 @@
+package com.demo.service;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.demo.beans.Employee;
+import com.demo.dao.EmployeeDAO;
+import com.demo.dao.EmployeeDAOImpl;
+
+public class EmployeeServiceImpl implements EmployeeService{
+	Scanner scan = new Scanner(System.in);
+	private EmployeeDAO edao;
+	
+	public void addEmployee() {
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		
+		
+		System.out.println("enter id");
+		int id=sc.nextInt();
+		System.out.println("enter name");
+		String name=sc.next();
+		System.out.println("enter salary");
+		double salary=sc.nextDouble();
+		
+	}
+	
+	
+}

@@ -1,0 +1,17 @@
+package com.demo.test;
+
+import com.demo.beans.Interface1;
+
+public class TestInterface implements Interface1{
+
+	
+	public void m11()
+	{
+		
+	}
+	public static void main(String[] args) {
+		TestInterface ob=new TestInterface();
+		ob.m12();
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.demo.test;
+
+import com.demo.service.EmployeeService;
+import com.demo.service.EmployeeServiceImpl;
+
+public class TestEmployeeMgmt {
+
+	public static void main(String[] args) {
+		EmployeeService eservice=new EmployeeServiceImpl();
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Exam.java&apos; to &apos;ExamHASRelation2_WithTimeFunction/src/com.demo.beans&apos;&#x0D;&#x0A;- Original project: &apos;ExamHASRelation&apos;&#x0D;&#x0A;- Destination element: &apos;ExamHASRelation2_WithTimeFunction/src/com.demo.beans&apos;&#x0D;&#x0A;- Original element: &apos;com.demo.beans.Exam.java&apos;" description="Copy compilation unit" destination="=ExamHASRelation2_WithTimeFunction/src&lt;com.demo.beans" element1="/src&lt;com.demo.beans{Exam.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1669617820042" units="1" version="1.0"/>
+</session>

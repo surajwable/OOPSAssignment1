@@ -1,0 +1,114 @@
+package com.demo.service;
+
+import java.util.Scanner;
+
+import com.demo.beans.Coach;
+import com.demo.beans.Player;
+import com.demo.beans.Team;
+
+public class TeamServiceImpl implements TeamService{
+
+	static Team[]tlist;
+	static int count;
+	static {
+		count=0;
+		tlist=new Team[10];
+		tlist[0]=new Team();
+		tlist[0].setTeamid(1);
+		tlist[0].setTname("CSK");
+		tlist[0].setC(new Coach(1,"dravid",25));
+		tlist[0].setP(new Player(100,"dhoni","allrounder"));
+		Player[] plist= {new Player(110,"Rohit","batsman"),
+				new Player(111,"Ishan","allrounder"),
+				new Player(112,"Sam","bowler"),
+				new Player(113,"jadeja","bowler"),new Player(114,"Raina","allrounder"),
+				};
+		tlist[0].setPlist(plist);
+		tlist[1]=new Team();
+		tlist[1].setTname("Mumbai Indians");
+		tlist[1].setC(new Coach(22,"Sachin",25));
+		tlist[1].setP(new Player(200,"Virat","allrounder"));
+		Player[] plist1= {new Player(121,"Yuvraj","allrounder"),
+				new Player(122,"Harbhajan","bowler"),
+				new Player(123,"Ashwin","bowler"),
+				new Player(124,"Suryakumar","bowler"),new Player(125,"dinesh","batsman"),
+				};
+		tlist[1].setPlist(plist);
+		count=2;
+		
+	}
+	@Override
+	public void createNewTeam() {
+		Scanner sc=new Scanner(System.in);
+		
+		//enter team Details
+		System.out.println("enter Teamid");
+		int tid=sc.nextInt();
+		System.out.println("Enter teamname");
+		String tname=sc.nextLine();
+		
+		//enter captain Details
+		System.out.println("enter captain ID");
+		int cid=sc.nextInt();
+		System.out.println("Enter Captain name");
+		String captainname=sc.nextLine();
+		System.out.println("Enter captain Speciality");
+		String speciality=sc.nextLine();
+		Player captain=new Player(cid,captainname,speciality);
+		
+		//enter coach details
+		System.out.println("enter coach Id");
+		int cid1=sc.nextInt();
+		System.out.println("Enter Coach name");
+		String cname=sc.nextLine();
+		System.out.println("enter coach Experience");
+		int exp=sc.nextInt();
+		Coach Coach=new Coach(cid1,"Cname",exp);
+		
+		//Enter player details
+		Player[]plist=new Player[5];
+		for(int i=0;i<plist.length;i++) {
+		System.out.println("Enter Player ID");
+		int pid=sc.nextInt();
+		System.out.println("Enter name");
+		String pname1=sc.nextLine();
+		System.out.println("Enter Speciality");
+		String spe=sc.nextLine();
+		plist[i]=new Player(pid,pname1,spe);
+		}
+		
+		tlist[count]=new Team(tid,tname,Coach,captain,plist);
+		count++;
+	}
+
+	@Override
+	public Team[] displayallteams() {
+		return tlist;
+	}
+
+	@Override
+	public Player[] findSpecialityAllTeams(String spe) {
+		
+		return null;
+	}
+
+	@Override
+	public Player[] getBySpeciality(String tname, String spe) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Team getByCaptain(String pname) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Team getByCoach(String coach) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

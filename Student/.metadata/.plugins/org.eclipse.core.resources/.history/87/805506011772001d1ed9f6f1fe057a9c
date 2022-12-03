@@ -1,0 +1,9 @@
+package com.demo.service;
+
+public class EmployeeServiceImpl implements EmployeeService{
+
+	static list<Employee>plist;
+	static {
+		plist=A
+	}
+}

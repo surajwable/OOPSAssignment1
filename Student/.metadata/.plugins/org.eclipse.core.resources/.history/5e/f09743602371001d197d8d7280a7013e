@@ -1,0 +1,88 @@
+package com.demo.service;
+import java.util.List;
+import java.util.Scanner;
+import java.util.ArrayList;
+import com.demo.beans.Product;
+
+public class ProductServiceImpl implements ProductService{
+	Scanner sc=new Scanner(System.in);
+	static List<Product>plist;
+	static {
+		plist=new ArrayList<>();
+		plist.add(new Product(1,"Laptop",5,35000.67f));
+		plist.add(new Product(2,"Mobile",5,15000.67f));
+	}
+
+	@Override
+	public static void addnewproduct() {
+		System.out.println("enter id");
+		int id=sc.nextInt();
+		sc.nextLine();
+		System.out.println("Enter name");
+		String name=sc.nextLine();
+		System.out.println("enter Quantity");
+		int qty=sc.nextInt();
+		sc.nextInt();
+		System.out.println("Enter Price");
+		float price=sc.nextFloat();
+		Product p=new Product(id,name,qty,price);
+		plist.add(p);
+	}
+	@Override
+	public Product searchById(int id) {
+		if(plist!=null) {
+			for(Product p:plist) {
+				if(p.getName().equals(p)) {
+					System.out.println(p);
+					break;
+				}else
+				{
+					System.out.println("Not found");
+				}
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public Product remove(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Product displayallwithqty() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Product modifyprice(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Product sortbyprice() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public List<Product> displayall() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Product searchbyname(String name) {
+
+		if(plist!=null) {
+			for(Product p:plist) {
+				if(p.getName().equals(name)) {
+					
+				}
+			}
+		}
+
+		return null;
+	}
+
+
+
+}
