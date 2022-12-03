@@ -7,7 +7,8 @@ public class DematAccount extends Account {
 	static {
 		interestRate = 0.08f;
 	}
-	public DematAccount() {
+	public DematAccount() 
+       {
 		super();
 		this.commission =0;
 	}

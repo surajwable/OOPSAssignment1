@@ -4,7 +4,7 @@ public class ContractEmp extends Employee{
 	private int hrs;
 	private double charges;
 	public ContractEmp() {
-		super();
+	
 		hrs=0;
 		charges=0;
 	}

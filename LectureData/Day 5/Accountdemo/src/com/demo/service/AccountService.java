@@ -21,7 +21,7 @@ public class AccountService {
 	public static boolean withdrawAmt(int accno, int pin, float amt) {
 		// TODO Auto-generated method stub
 		
-		Account ac=searchAcc(accno);
+		Account (accno);
 		if(ac!=null)
 		{
 			if(ac.getPin()==pin)
