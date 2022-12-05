@@ -1,0 +1,34 @@
+package com.demo.dao;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.demo.beans.Cart;
+import com.demo.beans.Customer;
+
+public class CustomerDAOImpl {
+	
+	//Customer cu=new Customer();
+	//Cart ct=new Cart();
+	
+	static Map<Customer,List<Cart>> cmap;
+	
+	static {
+		cmap=new HashMap<Customer,List<Cart>>();
+		List<Cart>clist1=Arrays.asList(new Cart(1,"laptop",35000f),new Cart(2,"Mobile",15000f));
+		cmap.put(new Customer(1,"Suraj"), clist1);
+		List<Cart>clist2=Arrays.asList(new Cart(3,"Camera",55000f),new Cart(4,"Ipad",95000f));
+		cmap.put(new Customer(2,"Akash"), clist2);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
