@@ -1,0 +1,11 @@
+package com.demo.service;
+
+public class CityServiceImpl implements CityService{
+
+	@Override
+	public boolean addNewCity() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

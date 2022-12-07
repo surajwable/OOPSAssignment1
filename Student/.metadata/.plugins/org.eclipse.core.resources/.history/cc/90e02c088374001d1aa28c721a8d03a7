@@ -1,0 +1,19 @@
+package com.demo.service;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class CustomerServiceImpl implements CustomerService {
+
+	@Override
+	public boolean inputCustomer() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter customer id");
+		int cid=sc.nextInt();
+		System.out.println("enter customer name");
+		String cname=sc.next();
+		List<Customer>=new ArrayList<>();
+		return false;
+	}
+
+}

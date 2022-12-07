@@ -1,0 +1,25 @@
+package com.demo.service;
+
+import com.demo.dao.LoginDAO;
+import com.demo.dao.LoginDAOImpl;
+
+public class LoginServiceImpl implements LoginService {
+
+private LoginDAO ldao;
+    
+    
+	public LoginServiceImpl() {
+		ldao=new LoginDAOImpl();
+	}
+	@Override
+	public boolean addNewUser() {
+	
+		
+		return false;
+		
+	    
+	   
+	}
+
+	
+}

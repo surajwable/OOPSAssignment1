@@ -1,0 +1,45 @@
+package com.demo.test;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Test {
+	
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int choice;
+	
+	do {
+		System.out.println("1. Add new city"
+				+ "\n2. Find trees from a city"
+				+ "\n3. Find all cities with the given tree"
+				+ "\n4. Add a new tree in the existing city"
+				+ "\n5. Display all"
+				+ "\n6. Display in sorted order of city names"
+				+ "\n7. Display no. of trees in a city"
+				+ "\n8. Remove a tree from the given city"
+				+ "\n9. Remove a city"
+				+ "\n10. Exit");
+		System.out.println("Enter your choice: ");
+		choice = sc.nextInt();
+		
+		switch (choice) {
+		case 1:
+			System.out.println("enter city name");
+			String cname=sc.next();
+			System.out.println("enter tree name");
+			String tname=sc.next();
+			List<String>lst=new ArrayList<>();
+			
+			break;
+
+		default:
+			break;
+		}
+		
+	}while(choice!=10);
+		
+	
+}
+}

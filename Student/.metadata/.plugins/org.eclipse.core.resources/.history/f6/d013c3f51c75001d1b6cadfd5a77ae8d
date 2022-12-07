@@ -1,0 +1,15 @@
+package com.demo.dao;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class LoginDAOImpl implements LoginDAO{
+	
+	static Map<String,String>loginCredentials;
+	static {
+		loginCredentials=new HashMap<>();
+		loginCredentials.put("user1","user1");
+		loginCredentials.put("user2","user2");
+		loginCredentials.put("user3","user3");
+	}
+}

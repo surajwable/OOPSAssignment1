@@ -28,13 +28,22 @@
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
     <fullyQualifiedTypeName name="com.demo.service.AccountService"/>
     <fullyQualifiedTypeName name="com.demo.service.AccountServiceImpl"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.demo.beans.Account"/>
     <fullyQualifiedTypeName name="com.demo.dao.AccountDAO"/>
     <fullyQualifiedTypeName name="com.demo.dao.AccountDAOImpl"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="com.demo.service.CityService"/>
+    <fullyQualifiedTypeName name="com.demo.service.CityServiceImpl"/>
+    <fullyQualifiedTypeName name="com.demo.service.CustomerService"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.demo.exception.WrongNumberException"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="com.demo.exceptions.WrongCredentialsException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,7 @@
+package com.demo.dao;
+
+public class CustomerDAOImpl {
+	
+	static Map<Customer,Cart> cmap;
+
+}

@@ -1,0 +1,22 @@
+package com.demo.dao;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class CityDAOImpl {
+
+	static Map<String, List<String>> cmap;
+
+	static {
+		cmap = new HashMap<String, List<String>>();
+		List<String> trees1 = Arrays.asList("Mango", "Neem", "Lemon");
+		cmap.put("Pune", trees1);
+		List<String> trees2 = Arrays.asList("Marigold", "Banyan", "Coconut");		
+		cmap.put("Mumbai", trees2);
+	}
+	
+	
+	
+}

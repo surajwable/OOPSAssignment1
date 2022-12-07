@@ -1,0 +1,8 @@
+package com.demo.beans;
+
+public class Cart {
+	private int iid;
+	private String iname;
+	private float iprice;
+
+}

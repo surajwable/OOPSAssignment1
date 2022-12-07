@@ -1,0 +1,15 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+public class TestLogin {
+
+	public static void main(String[] args) {
+
+		Scanner sc=new Scanner(System.in);
+		int choice=0;
+		System.out.println("1.Add New User\n2.Login\n3.Exit");
+		
+	}
+
+}

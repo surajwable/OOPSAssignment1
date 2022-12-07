@@ -1,0 +1,34 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+import com.demo.service.CustomerService;
+import com.demo.service.CustomerServiceImpl;
+
+public class TestCustomerCartManagement {
+
+	public static void main(String[] args) {
+
+		CustomerService cservice=new CustomerServiceImpl();
+		Scanner sc=new Scanner(System.in);
+		int choice=0;
+		do {
+			System.out.println("1.Add new CustomerwithCart"
+				+ "\n2.Find Items from the Cart using customer name"
+				+ "\n3.Display which item is present in multiple customers cart"
+				+ "\n4.Display All"
+				+ "\n5.");
+		choice=sc.nextInt();
+		switch(choice) {
+		case 1:
+			
+			break;
+			
+		case 5:System.out.println("Thank you for visiting ..!!");
+			break;
+		}
+		}while(choice!=5);
+				
+	}
+
+}

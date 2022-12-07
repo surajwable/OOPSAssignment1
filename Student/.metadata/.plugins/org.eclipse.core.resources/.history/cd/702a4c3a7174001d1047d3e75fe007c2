@@ -1,0 +1,7 @@
+package com.demo.dao;
+
+public class CustomerDAOImpl {
+	
+	Map<<Integer,String>,<Integer,List<String>,Float>> cmap=new HashMap<>();
+
+}

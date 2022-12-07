@@ -1,0 +1,14 @@
+package com.demo.service;
+
+public class CustomerServiceImpl implements CustomerService {
+
+	@Override
+	public boolean inputCustomer() {
+	System.out.println("enter customer id");
+	int id=sc.nextInt();
+	System.out.println("enter customer name");
+	String cname=sc.next();
+		return false;
+	}
+
+}

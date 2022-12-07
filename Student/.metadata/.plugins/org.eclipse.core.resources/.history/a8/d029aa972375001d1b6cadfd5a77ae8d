@@ -1,0 +1,29 @@
+package com.demo.service;
+
+import com.demo.dao.LoginDAO;
+import com.demo.dao.LoginDAOImpl;
+import com.demo.exceptions.WrongCredentialsException;
+
+public class LoginServiceImpl implements LoginService {
+
+private LoginDAO ldao;
+
+	public LoginServiceImpl() {
+		ldao=new LoginDAOImpl();
+	}
+	
+	@Override
+	public boolean addNewUser(){
+		System.out.println("ENter Name");
+		String name=sc.next();
+		System.out.println("enter password");
+		String password=sc.next();
+		
+		return false;
+		
+	    
+	   
+	}
+
+	
+}

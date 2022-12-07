@@ -1,0 +1,6 @@
+package com.demo.dao;
+
+public class CityDAOImpl {
+
+	Map<String,List<String>>cmap=new HashMap<>();
+}

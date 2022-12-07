@@ -1,0 +1,30 @@
+package com.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class CustomerServiceImpl implements CustomerService {
+
+	@Override
+	public boolean inputCustomer() {
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Please enter Customer Id: ");
+		int cid=sc.nextInt();
+		System.out.println("Please enter Customer name");
+		
+		String city = scan.next();
+		
+		List<String> lst = new ArrayList<>();
+		char ans;
+		do {
+			System.out.print("Please enter tree name: ");
+			String tname = scan.next();
+			lst.add(tname);
+			System.out.print("Do you want to continue? (y/n) :");
+			ans = scan.next().charAt(0);
+		}while(ans=='y');
+		return cdao.addNewEntry(city, lst);
+	}
+
+}

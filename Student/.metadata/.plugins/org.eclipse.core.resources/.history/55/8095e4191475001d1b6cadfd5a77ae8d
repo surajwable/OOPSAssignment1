@@ -1,0 +1,35 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+public class TryBlockforGuessingGame {
+
+	public static void main(String[] args) {
+
+		int i=50;
+		int count=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Guess the number...!! ");
+		while(true) {
+		try
+		{
+			int input=sc.nextInt();
+			if(input==i) {
+				System.out.println("Hurray...You have won the Game...!!!");
+				count++;
+			}
+			else 
+			{
+				System.out.println("Sorry..Attemp failed "+count);
+				System.out.println("Try Again");
+			}
+			break;
+			
+		}catch(ArithmeticException e){
+		
+		}
+		
+		}
+	}
+
+}

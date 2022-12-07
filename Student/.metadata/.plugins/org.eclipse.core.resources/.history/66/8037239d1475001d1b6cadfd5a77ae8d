@@ -1,0 +1,39 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+import com.demo.exception.WrongNumberException;
+
+public class TryBlockforGuessingGame {
+
+	public static void main(String[] args) {
+
+		int i=50;
+		int count=0;
+		int level=0
+		Scanner sc=new Scanner(System.in);
+		while(true) {
+		try
+		{
+			System.out.println("Guess the number...!! ");
+			int input=sc.nextInt();
+			if(input==i) {
+				System.out.println("Hurray...You have won the Game...!!!");
+				count++;
+			}
+			else 
+			{
+				System.out.println("Sorry..Attemp failed "+count);
+				System.out.println("Try Again");
+			}
+			break;
+			
+		}catch(WrongNumberException e){
+			System.out.println(e.getMessage());
+		
+		}
+		}
+		System.out.println("Challange Accoumplished....!!! Level up to"+);
+	}
+
+}

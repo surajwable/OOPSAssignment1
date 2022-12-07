@@ -1,0 +1,11 @@
+package com.demo.dao;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public interface LoginDAO {
+
+	boolean addUser(String name, String password);
+
+	
+}
