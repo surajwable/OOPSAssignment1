@@ -1,0 +1,13 @@
+package com.demo.beans;
+
+public class MyDigitSum {
+
+	private int num;
+
+	public MyDigitSum(int num) {
+		super();
+		this.num = num;
+	}
+	
+	public String call throws Exception
+}

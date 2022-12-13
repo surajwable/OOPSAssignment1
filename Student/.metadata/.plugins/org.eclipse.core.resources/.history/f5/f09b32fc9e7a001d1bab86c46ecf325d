@@ -1,0 +1,24 @@
+package com.demo.beans;
+
+public class MyDigitSum {
+
+	private int num;
+
+	public MyDigitSum(int num) {
+		super();
+		this.num = num;
+	}
+	
+	public String call() throws Exception{
+		int sum=0;
+		int num1=num;
+		while(num>0) {
+			int r=num%10;
+			sum=sum+r;
+			num=num/10;
+		}
+		return null;
+		
+		
+	}
+}

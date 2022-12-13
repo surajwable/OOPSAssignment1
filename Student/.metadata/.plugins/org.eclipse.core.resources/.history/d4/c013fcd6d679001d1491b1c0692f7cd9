@@ -1,0 +1,17 @@
+package com.demo.beans;
+
+public class MyNumFunctions {
+
+	public boolean primeNum(int n) {
+		try {
+			Thread.sleep(500);
+		}
+		catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		
+		return false;
+		
+	}
+}

@@ -17,7 +17,7 @@ public class TestAccountHashSet {
 		
 		System.out.println("1. assign type to a  account\n 2.find topn accounts based on balance\n 3. display all\n4. exit");
 		System.out.println("choice");
-	 choice=sc.nextInt();
+	        choice=sc.nextInt();
 		switch(choice) {
 		case 2:
 			System.out.println("Enter n value");

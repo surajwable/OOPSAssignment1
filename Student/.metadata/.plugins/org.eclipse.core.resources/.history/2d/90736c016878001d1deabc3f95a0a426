@@ -1,0 +1,15 @@
+package com.demo.pog1;
+
+public class OccurancesOfCharinString {
+
+	public static void main(String[] args) {
+		int count=0;
+		
+		
+	}
+	
+	public static int count(String s,char c) {
+		
+	}
+
+}

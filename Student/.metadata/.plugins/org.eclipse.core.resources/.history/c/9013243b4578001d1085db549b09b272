@@ -1,0 +1,9 @@
+package com.demo.test;
+
+import com.demo.beans.MyTable;
+
+public class TestMyThread{
+MyTable t=new MyTable();
+	
+	
+}

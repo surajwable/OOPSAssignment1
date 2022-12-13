@@ -1,0 +1,12 @@
+	package com.demo.test;
+	
+	import com.demo.beans.MyTable;
+import com.demo.threads.MyThread;
+	
+	public static void main(String[]args) {
+		MyTable t=new MyTable();
+	
+		MyThread t1=new MyThread(t1,10);
+		MyThread t2=new MyThread(t2,20);
+	}
+	}

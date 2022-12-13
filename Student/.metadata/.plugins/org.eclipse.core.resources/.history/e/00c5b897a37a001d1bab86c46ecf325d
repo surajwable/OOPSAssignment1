@@ -1,0 +1,24 @@
+package com.demo.test;
+
+import java.util.Scanner;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import com.demo.beans.MyDigitSum;
+import com.demo.beans.MyFactorial;
+
+public class TesFactorialDigitSum {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		ExecutorService es=Executors.newFixedThreadPool(4);
+		
+		for(int i=0;i<=3;i++) {
+			int num;
+			num=sc.nextInt();
+			MyDigitSum sum=new MyDigitSum(num);
+			MyFactorial fact=new MyFactorial(num);
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.demo.threads;
+
+import com.demo.beans.MyTable;
+
+public class MyThread extends Thread{
+	
+	private Mytable t;
+	private int n;
+	
+}

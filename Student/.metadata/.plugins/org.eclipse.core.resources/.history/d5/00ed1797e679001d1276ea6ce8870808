@@ -1,0 +1,42 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+import com.demo.beans.MyNumFunctions;
+import com.demo.thread.FactorialThread;
+import com.demo.thread.PrimeThread;
+
+public class TestPrimeFactorial {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		MyNumFunctions ob=new MyNumFunctions();
+		PrimeThread parr[]=new PrimeThread[5];
+		FactorialThread farr[]=new FactorialThread[5];
+		
+		for(int i=0;i<5;i++) {
+			System.out.println("Enter Number:  ");
+			int n=sc.nextInt();
+			farr[i]=new FactorialThread(ob,n);
+			farr[i].start();
+			
+			parr[i]=new PrimeThread(ob,n);
+			
+			parr[i].start();
+			try {
+				farr[i].join();
+				parr[i].join();
+			}
+			catch(InterruptedException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+//		for(int i=0;i<farr.length;i++) {
+			
+//		}
+
+	}
+
+}

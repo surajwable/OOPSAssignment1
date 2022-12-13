@@ -1,0 +1,20 @@
+package com.demo.threads;
+
+import com.demo.beans.MyTable;
+
+public class MyThread extends Thread{
+	
+	private MyTable t;
+	private int n;
+	
+	public MyThread(MyTable t,int n) {
+		super();
+		this.n=n;
+		this.t=t;
+	}
+	
+	public void run() {
+		t.printTable(n);
+	}
+	
+}

@@ -1,5 +1,4 @@
 package com.demo.test;
-
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
@@ -24,8 +23,7 @@ public class BackedCollectionDemo {
 		System.out.println(ts);
 		System.out.println(headset);
 		System.out.println(tailset);
-		
-	}
+		}
 
 
 }

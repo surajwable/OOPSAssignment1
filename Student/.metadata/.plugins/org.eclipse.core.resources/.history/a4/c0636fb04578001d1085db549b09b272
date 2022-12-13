@@ -1,0 +1,11 @@
+	package com.demo.test;
+	
+	import com.demo.beans.MyTable;
+	
+	public class TestMyThread{
+		MyTable t=new MyTable();
+	
+		MyThread t1=new MyThread(t1,10);
+		MyThread t1=new MyThread(t1,20);
+	
+	}

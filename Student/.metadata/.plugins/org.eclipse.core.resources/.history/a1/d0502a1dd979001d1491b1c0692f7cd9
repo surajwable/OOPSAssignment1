@@ -1,0 +1,13 @@
+package com.demo.thread;
+
+public class FactorialThread extends Thread {
+	
+	private MyNumFunctions ob;
+	private int n;
+	
+	public FactorialThread(MyNumFunctions ob,int n) {
+		this.ob=ob;
+		this.n=n;
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.demo.test;
+
+import com.demo.beans.MyTable;
+import com.demo.threads.MyThread;
+
+public class TestMyThread{
+	
+	public static void main(String[] args) {
+	
+		MyTable t=new MyTable();
+		MyThread t1=new MyThread(t,5);
+		MyThread t2=new MyThread(t,10);
+		t1.start();
+		t2.start();
+		
+		t1.run();
+		t2.run();
+		
+System.out.println("In the main");
+	}
+
+
+}
